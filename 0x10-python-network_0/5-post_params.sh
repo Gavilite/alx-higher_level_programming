@@ -1,3 +1,3 @@
 #!/bin/bash
-# Post to an arg URL and displays the response body
-curl -s -X POST --data "email=test@gmail&subject=I will always be here for PLD" "$1"
+# send a POST request to the passed URL using curl, and display the body of the response
+curl -s -X POST -d "email=test@gmail.com&subject=I will always be here for PLD" "$1"
